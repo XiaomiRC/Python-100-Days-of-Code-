@@ -2,6 +2,9 @@
 1. Only people who are 120 cms and above can ride the rollercoaster.
 2. You need to take the height in cms as input from the person.
 
+**NOTE** 
+- You will find the flow chart in "Day 3: Rollercoaster 1 .pdf"
+
 ```
 print("Welcome to the rollercoaster!")
 
