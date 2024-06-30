@@ -116,3 +116,45 @@ if height >= 120:
 else:
   print("Sorry, you have to grow taller before you can ride.")  # this is printed if the customer is less than 120 cms in height
 ```
+## Level 5
+11. We're now providing the customer udergoing mid-life crisis a free ride. As per wikipedia, mid-life crisis usually happens from 45 to 55 years of age. Modify the program to include this criteria.
+
+
+**NOTE** 
+- You will find the flow chart in "Day 3: Rollercoaster 5 .pdf"
+
+### Solution 5
+```
+print("Welcome to the rollercoaster!")
+
+# Take the height in cms as input
+height = int(input("What is your height in cm?"))
+
+# Use the if..else condition to determine eligibility to ride the rollercoaster
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  bill=0  # declaring the variable bill
+  age = int(input("What is your age in years?"))  # taking age as input
+  if age >=45 and age <=55:                       # using logical operators to find the group undergoing mid-life crisis. 
+    print("Everything is going to be okay. Have a free ride on us!")
+  elif age >18:
+    bill=12
+    print("Adult tickets are $12.")
+  elif age>=12:
+    bill=7
+    print("Youth tickers are $7.")
+  else:
+    bill=5
+    print("Child tickets are $5.")
+
+# Declare another variable photo to determine if the customer wants their photo taken
+  photo = input(" Do you want a picture taken for $3?(y/n)")
+  if photo == "y":
+    # Add 3 dollars to the bill
+    bill = bill + 3
+    print(f"Your final bill is ${bill}")
+  else:
+    print(f"Your final bill is ${bill}")  # prints the bill without adding $3
+else:
+  print("Sorry, you have to grow taller before you can ride.")  # this is printed if the customer is less than 120 cms in height
+```
