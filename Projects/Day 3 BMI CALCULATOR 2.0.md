@@ -10,13 +10,13 @@
 **NOTE**
 - BMI = weight ÷ height * height
 
-```
+```python
 # Takes the height and weight as an input from the user
-height = float(input("Enter your height in meters e.g., 1.55"))
-weight = int(input("Enter your weight in kilograms e.g., 72"))
+height = float(input("Enter your height in meters e.g., 1.55\n"))
+weight = int(input("Enter your weight in kilograms e.g., 72\n"))
 
 # Calculates the BMI
-bmi = weight/(height**2)
+bmi = round(weight/(height**2))
 
 # Conditions that provdives the clinical interpretation of the user's BMI
 if bmi<18.5:
