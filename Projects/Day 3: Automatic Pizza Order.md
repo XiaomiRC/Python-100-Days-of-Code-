@@ -23,34 +23,42 @@ Add extra cheese for any size pizza (Y or N): +$1
 - Thank you for choosing Python Pizza Deliveries!
 - Your final bill is: $28.
 
-```
-print("Thank you for choosing Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L") 
-add_pepperoni = input("Do you want pepperoni? Y or N")
-extra_cheese = input("Do you want extra cheese? Y or N") 
+```python
+# Display a welcome message to the user
+print("Thank you for choosing Python Pizza Deliveries!\n")
 
+# Ask the user for the size of the pizza
+size = input("What size pizza do you want? S, M, or L\n") 
+
+# Ask the user if they want pepperoni
+add_pepperoni = input("Do you want pepperoni? Y or N\n")
+
+# Ask the user if they want extra cheese
+extra_cheese = input("Do you want extra cheese? Y or N\n") 
+
+# Initialize the variable "bill" to 0
 bill = 0
 
-# Assigning the value to the variable "bill" as per the size of the pizza
+# Assigning the base price of the pizza based on its size
 if size == "S":
-  bill = 15
-
+    bill = 15
 elif size == "M":
-  bill = 20
- 
+    bill = 20
 else:
-  bill = 25
+    bill = 25
 
-# Adding the charge for pepperoni to the bill
+# Adding the charge for pepperoni based on the size of the pizza
 if add_pepperoni == "Y":
     if size == "S":
-      bill += 2
+        bill += 2
     else:
-      bill += 3
+        bill += 3
 
-# Adding the charge for extra cheese to the bill   
+# Adding the charge for extra cheese to the bill
 if extra_cheese == "Y":
-  bill += 1
+    bill += 1
 
+# Print the final bill to the user
 print(f"Your final bill is: ${bill}.")
+
 ```
